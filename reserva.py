@@ -1,7 +1,8 @@
-import cliente, quarto
+from quarto import Quarto
+from cliente import 
 
 class Reserva:
-    def __init__(self, data_entrada : str, data_saida : str, quarto: object, cliente : object, status: str) -> None:
+    def __init__(self, data_entrada : str, data_saida : str, quarto: Quarto, cliente : Cliente, status: str) -> None:
         self.__data_entrada = data_entrada
         self.__data_saida = data_saida
         self.__quarto = quarto
