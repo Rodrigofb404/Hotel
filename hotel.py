@@ -56,7 +56,7 @@ class Hotel:
     def finalizar_reserva(self, n_reserva : Reserva.n_reserva):
         for res in self.reservas_andamento:
             if (n_reserva == res.n_reserva):
-                self.reserva_finalizadas.append(res)
+                self.reservas_finalizadas.append(res)
                 res.quarto.disponibilidade = True
                 self.reservas_andamento.remove(res)
                 return
@@ -82,21 +82,8 @@ class Hotel:
         
         print(f"A Reserva de Nº {n_reserva} não existe!")
                 
-def main():
-    
-    opcao = None
-    
-    while (opcao != 0):
-        print("----------- MENU HOTEL ------------")
-        print("\033[31mOPÇÃO 0: ENCERRAR\033[0m")
-        print("OPÇÃO 1: Adicionar Quarto")
-        print("OPÇÃO 2: Criar Reserva")
-        print("OPÇÃO 3: Finalizar Reserva")
-        print("OPÇÃO 4: Pesquisar Reserva")
-        
-        opcao = int(input("SELECIONAR: ")) 
 
-main()
+
             
                
 
