@@ -1,6 +1,4 @@
-from hotel import *
-
-class Quarto(Hotel):
+class Quarto():
     def __init__(self, numero: int, tipo_quarto: int, preco: int) -> None: # tipo_quarto 1: Suíte Presidencial 2: Suíte com varanda | 3: Suíte | 4: quarto simples 
         self.__numero = numero
         self.__tipo_quarto = tipo_quarto
